@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Сайт галереи</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+   <div class="header-modern">
+       <div class="logo-modern">
+           <i class="fas fa-poop"></i>
+           <span>Srali</span>Mazali
+       </div>
+       <div class="title-modern">
+          Картинная галерея 
+       </div>
+   </div>
+</div> 
+
+<div class="info-bar-with-name">
+    <div class="gallery-name-badge">
+        <span>Галерея SraliMazali</span>
+    </div>
+    <div class="info-details">
+        <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <span>10:00 - 20:00</span>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-location-dot"></i>
+            <span>Арбат, 15</span>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <span>+7 (495) 123-45-67</span>
+        </div>
+    </div>
+</div> 
+
+<div class="container">
+    <h1>🎬 Слайд-шоу галерея</h1>
+    
+    <button class="play-pause" id="playPauseBtn">⏸ Пауза</button>
+    
+    <div class="slideshow-container">
+        <button class="prev" id="prevBtn">❮</button>
+        <button class="next" id="nextBtn">❯</button>
+        
+        <div class="slide active" data-index="0">
+            <img src="Снимок экрана 2026-04-15 145048.png" alt="Золотая осень">
+            <div class="slide-caption">Исаак Ильич Левитан - Золотая осень</div>
+        </div>
+        
+        <div class="slide" data-index="1">
+            <img src="богатырята.jpg" alt="Богатыри">
+            <div class="slide-caption">Виктор Михайлович Васнецов - Богатыри</div>
+        </div>
+        
+        <div class="slide" data-index="2">
+            <img src="елезалезла.jpg" alt="Мона Лиза">
+            <div class="slide-caption">Леонардо Да Винчи - Мона Лиза</div>
+        </div>
+        
+        <div class="slide" data-index="3">
+            <img src="кадрат.jpg" alt="Чёрный квадрат">
+            <div class="slide-caption">Казимир Малевич - Чёрный квадрат</div>
+        </div>
+        
+        <div class="slide" data-index="4">
+            <img src="мазня.jpg" alt="Звёздная ночь">
+            <div class="slide-caption">Винсент Ван Гог - Звёздная ночь</div>
+        </div>
+        
+        <div class="slide" data-index="5">
+            <img src="персики.jpg" alt="Девочка с персиками">
+            <div class="slide-caption">Валентин Серов - Девочка с персиками</div>
+        </div>
+    </div>
+    
+    <div class="dots" id="dotsContainer">
+        <span class="dot active" data-dot="0"></span>
+        <span class="dot" data-dot="1"></span>
+        <span class="dot" data-dot="2"></span>
+        <span class="dot" data-dot="3"></span>
+        <span class="dot" data-dot="4"></span>
+        <span class="dot" data-dot="5"></span>
+    </div>
+    
+    <div class="thumbnails" id="thumbnailsContainer">
+        <img src="Снимок экрана 2026-04-15 145048.png" class="thumbnail active-thumb" data-thumb="0" alt="Золотая осень">
+        <img src="богатырята.jpg" class="thumbnail" data-thumb="1" alt="Богатыри">
+        <img src="елезалезла.jpg" class="thumbnail" data-thumb="2" alt="Мона Лиза">
+        <img src="кадрат.jpg" class="thumbnail" data-thumb="3" alt="Чёрный квадрат">
+        <img src="мазня.jpg" class="thumbnail" data-thumb="4" alt="Звёздная ночь">
+        <img src="персики.jpg" class="thumbnail" data-thumb="5" alt="Девочка с персиками">
+    </div>
+</div>
+
+<div id="lightbox" class="lightbox">
+    <span class="close">✕</span>
+    <img id="lightboxImg" src="" alt="">
+    <div id="lightboxCaption" class="lightbox-caption"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
